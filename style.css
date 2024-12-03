@@ -1,0 +1,77 @@
+/* Fonte geral */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Righteous&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0052a1);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    color: #ffdd57;
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+#story-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+button.option {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5722, #e91e63);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+button.option:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #e91e63, #ff5722);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbbbbb;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
